@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 3</title>
+</head>
+<body>
+<center>
+     <h2>
+        1001641420 <br/>
+        Mustafa Alhilo
+    </h2>
+</center>
+<br>
+<h3><b>Question 3:</b></h3>
+
+   <br> <b>Choose using magnitude:</b><br>
+
+<form name="redis_cache" action = "/redis_cache" method = "get" enctype = "multipart/form-data">
+    Give a magnitude value(checking with cache): <input type="text" name="magnitude" required>
+    <input type="Submit" value="Search">
+</form>
+
+
+        <b>Choose using time range:</b><br>
+
+<form name="redis_time" action = "/redis_time" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    Lower time: <input type="date" name="lowtime" required>  Higher time: <input type="date" name="highertime" required>  <br>
+    <input type="Submit" value="Search">
+</form>
+
+<b>Choose for searching the earthquakes occuring in CA:</b><br>
+<form name="redis_CA" action = "/redis_CA" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    <input type="Submit" value="Search">
+</form>
+<br>
+        <b>Choose for searching N<100 km of a specified lat,long location:</b><br>
+<form name="redis_loc" action = "/redis_loc" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    Latitude: <input type="text" name="lat" required>  Longitude: <input type="text" name="long" required>
+    <input type="Submit" value="Search">
+</form>
+</body>
+</html>

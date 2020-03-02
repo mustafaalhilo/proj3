@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+</head>
+<body>
+<center>
+     <h2>
+        1001641420 <br/>
+        Mustafa Alhilo
+    </h2>
+</center>
+   <br><h3><b>Question 2:</b></h3>
+   <br> <b>Choose using magnitude range:</b><br>
+<form name="restricted_mag" action = "/restricted_mag" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    Lower magnitude: <input type="text" name="lowmag" required>  Higher Magnitude: <input type="text" name="highermag" required>  <br>
+    <input type="Submit" value="Search">
+</form>
+<br>
+        <b>Choose using time range:</b><br>
+<form name="restricted_time" action = "/restricted_time" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    Lower time: <input type="date" name="lowtime" required>  Higher time: <input type="date" name="highertime" required>  <br>
+    <input type="Submit" value="Search">
+</form>
+<br>
+        <b>Choose for searching the earthquakes occuring in CA:</b><br>
+<form name="restricted_CA" action = "/restricted_CA" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    <input type="Submit" value="Search">
+</form>
+<br>
+        <b>Choose for searching N<100 km of a specified lat,long location:</b><br>
+<form name="restricted_loc" action = "/restricted_loc" method = "get" enctype = "multipart/form-data">
+    Enter the number of queries to process: <input type="number" name="query_limit1" required>
+    Latitude: <input type="text" name="lat" required>  Longitude: <input type="text" name="long" required>
+    <input type="Submit" value="Search">
+</form>
+
+</body>
+</html>
